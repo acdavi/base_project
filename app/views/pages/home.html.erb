@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>HOME Page</title>
-	<link rel="stylesheet" href="app/assets/stylesheets/estilo.css">
+	<title>Clicker</title>
+	<link rel="stylesheet" type="text/css" href="C:\Users\Senai\dev\base_project\app\assets\stylesheets\estilo.css">
+	<link rel="javascript" type="text/javascript" href="C:\Users\Senai\dev\base_project\app\assets\javascripts\funcoes.js">
 </head>
 <body>
-	<h1>Página Principal</h1>
+<section id="app">
+    <div id="div1">
+      <button type="submit" 
+      @click="updateCount()" id="clickButton">
+      </button>
+    </div>
+
+    <!-- Second status  -->
+    <div id="status"></div>
+    <h1> You clicked <b>{{ numClicks }}</b> times</h1>
+    <h2> You have <b>{{ secs }}</b> secs left </h2>
+</section>
 </body>
 </html>
