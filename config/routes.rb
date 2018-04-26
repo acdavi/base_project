@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
+=======
+  resources :aaas
+>>>>>>> 8a82c7bc599d77b1cb01647ab6c3ab0cadef2483
   resources :children
   resources :fathers
   resources :cursos

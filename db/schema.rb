@@ -10,6 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20180425230607) do
 
   create_table "children", force: :cascade do |t|
@@ -18,6 +19,22 @@ ActiveRecord::Schema.define(version: 20180425230607) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["father_id"], name: "index_children_on_father_id"
+=======
+ActiveRecord::Schema.define(version: 20180425231304) do
+
+  create_table "aaas", force: :cascade do |t|
+    t.string   "nome"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "children", force: :cascade do |t|
+    t.string   "nome"
+    t.integer  "Father_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["Father_id"], name: "index_children_on_Father_id"
+>>>>>>> 8a82c7bc599d77b1cb01647ab6c3ab0cadef2483
   end
 
   create_table "cursos", force: :cascade do |t|
