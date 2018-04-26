@@ -14,7 +14,7 @@
     <% @fathers.each do |father| %>
       <tr>
         <td><%= father.name %></td>
-        <td><%= link_to 'Show', father %></td>
+        <td><%= link_to 'Show', father.name %></td>
         <td><%= link_to 'Edit', edit_father_path(father) %></td>
         <td><%= link_to 'Destroy', father, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
