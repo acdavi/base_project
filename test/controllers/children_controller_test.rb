@@ -17,7 +17,11 @@ class ChildrenControllerTest < ActionDispatch::IntegrationTest
 
   test "should create child" do
     assert_difference('Child.count') do
+<<<<<<< HEAD
+      post children_url, params: { child: { father_id: @child.father_id, nome: @child.nome } }
+=======
       post children_url, params: { child: { Father_id: @child.Father_id, nome: @child.nome } }
+>>>>>>> 8a82c7bc599d77b1cb01647ab6c3ab0cadef2483
     end
 
     assert_redirected_to child_url(Child.last)
@@ -34,7 +38,11 @@ class ChildrenControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update child" do
+<<<<<<< HEAD
+    patch child_url(@child), params: { child: { father_id: @child.father_id, nome: @child.nome } }
+=======
     patch child_url(@child), params: { child: { Father_id: @child.Father_id, nome: @child.nome } }
+>>>>>>> 8a82c7bc599d77b1cb01647ab6c3ab0cadef2483
     assert_redirected_to child_url(@child)
   end
 

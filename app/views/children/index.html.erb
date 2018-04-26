@@ -15,7 +15,11 @@
     <% @children.each do |child| %>
       <tr>
         <td><%= child.nome %></td>
+<<<<<<< HEAD
+        <td><%= child.father %></td>
+=======
         <td><%= child.Father %></td>
+>>>>>>> 8a82c7bc599d77b1cb01647ab6c3ab0cadef2483
         <td><%= link_to 'Show', child %></td>
         <td><%= link_to 'Edit', edit_child_path(child) %></td>
         <td><%= link_to 'Destroy', child, method: :delete, data: { confirm: 'Are you sure?' } %></td>
