@@ -14,7 +14,11 @@
     <% @fathers.each do |father| %>
       <tr>
         <td><%= father.name %></td>
+<<<<<<< HEAD
         <td><%= link_to 'Show', father.name %></td>
+=======
+        <td><%= link_to 'Show', father %></td>
+>>>>>>> fb9d3fa020e8a158f593bad23e3346cbca95d500
         <td><%= link_to 'Edit', edit_father_path(father) %></td>
         <td><%= link_to 'Destroy', father, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
