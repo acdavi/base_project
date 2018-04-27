@@ -17,6 +17,10 @@
 
 
       <ul class="nav navbar-nav navbar-right">
+        <% if current_user %>
+        <li> <%= link_to "conta", edit_user_registration_path %></li>
+        <li> <%= link_to "sair", destroy_user_session_pathh method: :delete %></li>
+        <% end %>
         <li><a href="#">Sobre</a></li>
         <li><a href="#">Login</a></li>
         <li class="dropdown">
