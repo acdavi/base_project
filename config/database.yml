@@ -23,3 +23,10 @@ test:
 production:
   <<: *default
   database: db/production.sqlite3
+
+  production: 
+    <<: *default
+    database: senai_challenger_game
+    username: myapp
+    password: <%= ENV['MAYPP_DATABASE_PASSWORD']%>
+    
