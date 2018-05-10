@@ -10,14 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180427005033) do
+ActiveRecord::Schema.define(version: 20180510003017) do
 
-  create_table "children", force: :cascade do |t|
+  create_table "contacts", force: :cascade do |t|
     t.string   "name"
-    t.integer  "father_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["father_id"], name: "index_children_on_father_id"
+    t.string   "email"
+    t.string   "phone"
+    t.text     "description"
+    t.integer  "user_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["user_id"], name: "index_contacts_on_user_id"
   end
 
   create_table "cursos", force: :cascade do |t|
@@ -25,12 +28,6 @@ ActiveRecord::Schema.define(version: 20180427005033) do
     t.string   "professor"
     t.string   "alunos"
     t.text     "observacao"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "fathers", force: :cascade do |t|
-    t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -52,7 +49,10 @@ ActiveRecord::Schema.define(version: 20180427005033) do
     t.datetime "created_at",                                      null: false
     t.datetime "updated_at",                                      null: false
     t.string   "phone_number"
+    t.string   "authentication_token",   limit: 30
+    t.index ["authentication_token"], name: "index_users_on_authentication_token", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
+
 end
