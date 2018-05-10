@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+gem 'rack-attack'
 gem 'rack-cors'
 #simple form
 gem 'simple_form'
