@@ -49,7 +49,7 @@ group :development do
   gem 'web-console', '>= 3.3.0'
 end
 
-roup :production do
+group :production do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'pg'
 end
@@ -58,3 +58,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise'
+gem 'rack-cors'
+gem 'rack-attack'
+gem 'simple_token_authentication', '~> 1.0'
+
