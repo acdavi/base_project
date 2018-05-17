@@ -1,5 +1,10 @@
 class Api::V1::ContactsController < ApplicationController
 
+	before_action :set_contact, only: [:show, :update, :destroy]
+
+ 	before_action :require_authorization!, only: [:show, :update, :destroy]
+
+
 	# GET /api/v1/contacts
 	def index
    		@contacts = current_user.contacts
