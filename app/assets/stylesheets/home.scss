@@ -1,0 +1,20 @@
+   html, body { height: 100%; }
+
+ body { background-image:linear-gradient(  #ffcd6e, #fff288 );}
+
+ button {
+  background-image:linear-gradient(  #ffcd6e, #fff288 );
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #000;
+  
+  border: #000;
+  border-radius: 15px;
+  
+}
+
