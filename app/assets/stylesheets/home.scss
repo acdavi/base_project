@@ -2,19 +2,25 @@
 
  body { background-image:linear-gradient(  #ffcd6e, #fff288 );}
 
+ 
  button {
-  background-image:linear-gradient(  #ffcd6e, #fff288 );
+  background-image:linear-gradient(  #f90, #f2ed00);
   display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
+  padding: 8px 45px;
+  font-size: 14px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  outline: none;
+ 
   color: #000;
-  
   border: #000;
-  border-radius: 15px;
+  border-radius: 40px;
   
 }
+button:hover {background-color: #3e8e41}
 
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
