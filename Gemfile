@@ -47,6 +47,7 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'sqlite3'
   gem 'pry'
+  gem 'rdoc','~>4.2'
 end
 
 group :development do
