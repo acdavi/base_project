@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>development.log - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+</script>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/darkfish.js"></script>
+
+<link href="../css/fonts.css" rel="stylesheet">
+<link href="../css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../table_of_contents.html#pages">Pages</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../Gemfile.html">Gemfile</a>
+  
+    <li><a href="../Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li><a href="../README_md.html">README</a>
+  
+    <li><a href="../Rakefile.html">Rakefile</a>
+  
+    <li><a href="../app/assets/config/manifest_js.html">manifest.js</a>
+  
+    <li><a href="../app/assets/javascripts/api/v1/contacts_coffee.html">contacts.coffee</a>
+  
+    <li><a href="../app/assets/javascripts/application_js.html">application.js</a>
+  
+    <li><a href="../app/assets/javascripts/bootstrap_js_coffee.html">bootstrap.js.coffee</a>
+  
+    <li><a href="../app/assets/javascripts/cable_js.html">cable.js</a>
+  
+    <li><a href="../app/assets/javascripts/cursos_coffee.html">cursos.coffee</a>
+  
+    <li><a href="../app/assets/stylesheets/api/v1/contacts_scss.html">contacts.scss</a>
+  
+    <li><a href="../app/assets/stylesheets/application_css.html">application.css</a>
+  
+    <li><a href="../app/assets/stylesheets/bootstrap_and_overrides_css.html">bootstrap_and_overrides.css</a>
+  
+    <li><a href="../app/assets/stylesheets/home_scss.html">home.scss</a>
+  
+    <li><a href="../config_ru.html">config.ru</a>
+  
+    <li><a href="../log/development_log.html">development.log</a>
+  
+    <li><a href="../public/404_html.html">404.html</a>
+  
+    <li><a href="../public/422_html.html">422.html</a>
+  
+    <li><a href="../public/500_html.html">500.html</a>
+  
+    <li><a href="../public/apple-touch-icon-precomposed_png.html">apple-touch-icon-precomposed.png</a>
+  
+    <li><a href="../public/apple-touch-icon_png.html">apple-touch-icon.png</a>
+  
+    <li><a href="../public/favicon_ico.html">favicon.ico</a>
+  
+    <li><a href="../public/robots_txt.html">robots</a>
+  
+    <li><a href="../tmp/pids/server_pid.html">server.pid</a>
+  
+    <li><a href="../tmp/restart_txt.html">restart</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page log/development.log">
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 19:39:44 -0300</p>
+
+<p>ActiveRecord::PendingMigrationError (</p>
+
+<p>Migrations are pending. To resolve this issue, run:</p>
+
+<pre>bin/rails db:migrate RAILS_ENV=development</pre>
+
+<p>):</p>
+
+<p>activerecord (5.0.7) lib/active_record/migration.rb:573:in
+`check_pending!&#39; activerecord (5.0.7)
+lib/active_record/migration.rb:549:in `call&#39; actionpack (5.0.7)
+lib/action_dispatch/middleware/callbacks.rb:38:in `block in call&#39;
+activesupport (5.0.7) lib/active_support/callbacks.rb:97:in
+`<em>run_callbacks</em>&#39; activesupport (5.0.7)
+lib/active_support/callbacks.rb:750:in `_run_call_callbacks&#39;
+activesupport (5.0.7) lib/active_support/callbacks.rb:90:in
+`run_callbacks&#39; actionpack (5.0.7)
+lib/action_dispatch/middleware/callbacks.rb:36:in `call&#39; actionpack
+(5.0.7) lib/action_dispatch/middleware/executor.rb:12:in `call&#39;
+actionpack (5.0.7) lib/action_dispatch/middleware/remote_ip.rb:79:in
+`call&#39; actionpack (5.0.7)
+lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call&#39;
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app&#39;
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call&#39;
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch&#39;
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call&#39;
+actionpack (5.0.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in
+`call&#39; railties (5.0.7) lib/rails/rack/logger.rb:36:in `call_app&#39;
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `block in call&#39;
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `block in
+tagged&#39; activesupport (5.0.7)
+lib/active_support/tagged_logging.rb:26:in `tagged&#39; activesupport
+(5.0.7) lib/active_support/tagged_logging.rb:69:in `tagged&#39; railties
+(5.0.7) lib/rails/rack/logger.rb:24:in `call&#39; sprockets-rails (3.2.1)
+lib/sprockets/rails/quiet_assets.rb:13:in `call&#39; actionpack (5.0.7)
+lib/action_dispatch/middleware/request_id.rb:24:in `call&#39; rack (2.0.4)
+lib/rack/method_override.rb:22:in `call&#39; rack (2.0.4)
+lib/rack/runtime.rb:22:in `call&#39; activesupport (5.0.7)
+lib/active_support/cache/strategy/local_cache_middleware.rb:28:in
+`call&#39; actionpack (5.0.7)
+lib/action_dispatch/middleware/executor.rb:12:in `call&#39; actionpack
+(5.0.7) lib/action_dispatch/middleware/static.rb:136:in `call&#39; rack
+(2.0.4) lib/rack/sendfile.rb:111:in `call&#39; rack-cors (1.0.2)
+lib/rack/cors.rb:97:in `call&#39; railties (5.0.7)
+lib/rails/engine.rb:522:in `call&#39; puma (3.11.3)
+lib/puma/configuration.rb:225:in `call&#39; puma (3.11.3)
+lib/puma/server.rb:624:in `handle_request&#39; puma (3.11.3)
+lib/puma/server.rb:438:in `process_client&#39; puma (3.11.3)
+lib/puma/server.rb:302:in `block in run&#39; puma (3.11.3)
+lib/puma/thread_pool.rb:120:in `call&#39; puma (3.11.3)
+lib/puma/thread_pool.rb:120:in `block in spawn_thread&#39;</p>
+
+<pre>Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.0ms)
+Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (764.0ms)</pre>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 19:41:52 -0300</p>
+
+<p>ActiveRecord::PendingMigrationError (</p>
+
+<p>Migrations are pending. To resolve this issue, run:</p>
+
+<pre>bin/rails db:migrate RAILS_ENV=development</pre>
+
+<p>):</p>
+
+<p>activerecord (5.0.7) lib/active_record/migration.rb:573:in
+`check_pending!&#39; activerecord (5.0.7)
+lib/active_record/migration.rb:549:in `call&#39; actionpack (5.0.7)
+lib/action_dispatch/middleware/callbacks.rb:38:in `block in call&#39;
+activesupport (5.0.7) lib/active_support/callbacks.rb:97:in
+`<em>run_callbacks</em>&#39; activesupport (5.0.7)
+lib/active_support/callbacks.rb:750:in `_run_call_callbacks&#39;
+activesupport (5.0.7) lib/active_support/callbacks.rb:90:in
+`run_callbacks&#39; actionpack (5.0.7)
+lib/action_dispatch/middleware/callbacks.rb:36:in `call&#39; actionpack
+(5.0.7) lib/action_dispatch/middleware/executor.rb:12:in `call&#39;
+actionpack (5.0.7) lib/action_dispatch/middleware/remote_ip.rb:79:in
+`call&#39; actionpack (5.0.7)
+lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call&#39;
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app&#39;
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call&#39;
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch&#39;
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call&#39;
+actionpack (5.0.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in
+`call&#39; railties (5.0.7) lib/rails/rack/logger.rb:36:in `call_app&#39;
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `block in call&#39;
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `block in
+tagged&#39; activesupport (5.0.7)
+lib/active_support/tagged_logging.rb:26:in `tagged&#39; activesupport
+(5.0.7) lib/active_support/tagged_logging.rb:69:in `tagged&#39; railties
+(5.0.7) lib/rails/rack/logger.rb:24:in `call&#39; sprockets-rails (3.2.1)
+lib/sprockets/rails/quiet_assets.rb:13:in `call&#39; actionpack (5.0.7)
+lib/action_dispatch/middleware/request_id.rb:24:in `call&#39; rack (2.0.4)
+lib/rack/method_override.rb:22:in `call&#39; rack (2.0.4)
+lib/rack/runtime.rb:22:in `call&#39; activesupport (5.0.7)
+lib/active_support/cache/strategy/local_cache_middleware.rb:28:in
+`call&#39; actionpack (5.0.7)
+lib/action_dispatch/middleware/executor.rb:12:in `call&#39; actionpack
+(5.0.7) lib/action_dispatch/middleware/static.rb:136:in `call&#39; rack
+(2.0.4) lib/rack/sendfile.rb:111:in `call&#39; rack-cors (1.0.2)
+lib/rack/cors.rb:97:in `call&#39; railties (5.0.7)
+lib/rails/engine.rb:522:in `call&#39; puma (3.11.3)
+lib/puma/configuration.rb:225:in `call&#39; puma (3.11.3)
+lib/puma/server.rb:624:in `handle_request&#39; puma (3.11.3)
+lib/puma/server.rb:438:in `process_client&#39; puma (3.11.3)
+lib/puma/server.rb:302:in `block in run&#39; puma (3.11.3)
+lib/puma/thread_pool.rb:120:in `call&#39; puma (3.11.3)
+lib/puma/thread_pool.rb:120:in `block in spawn_thread&#39;</p>
+
+<pre>Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.0ms)
+Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (619.0ms)
+[1m[35m (78.0ms)[0m  [1m[35mCREATE TABLE &quot;schema_migrations&quot; (&quot;version&quot; varchar NOT NULL PRIMARY KEY)[0m
+[1m[35m (46.8ms)[0m  [1m[35mCREATE TABLE &quot;ar_internal_metadata&quot; (&quot;key&quot; varchar NOT NULL PRIMARY KEY, &quot;value&quot; varchar, &quot;created_at&quot; datetime NOT NULL, &quot;updated_at&quot; datetime NOT NULL)[0m
+[1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;[0m</pre>
+
+<p>Migrating to <a href="../CreateCursos.html">CreateCursos</a>
+(20180406002622)</p>
+
+<pre>[1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+[1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE &quot;cursos&quot; (&quot;id&quot; INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, &quot;nome&quot; varchar, &quot;professor&quot; varchar, &quot;alunos&quot; varchar, &quot;observacao&quot; text, &quot;created_at&quot; datetime NOT NULL, &quot;updated_at&quot; datetime NOT NULL)[0m
+[1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO &quot;schema_migrations&quot; (&quot;version&quot;) VALUES (?)[0m  [[&quot;version&quot;, &quot;20180406002622&quot;]]
+[1m[35m (78.0ms)[0m  [1m[36mcommit transaction[0m</pre>
+
+<p>Migrating to <a href="../DeviseCreateUsers.html">DeviseCreateUsers</a>
+(20180427003442)</p>
+
+<pre>[1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+[1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE &quot;users&quot; (&quot;id&quot; INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, &quot;email&quot; varchar DEFAULT &#39;&#39; NOT NULL, &quot;name&quot; varchar(100) DEFAULT &#39;&#39; NOT NULL, &quot;date_of_birth&quot; varchar, &quot;username&quot; varchar DEFAULT &#39;&#39; NOT NULL, &quot;encrypted_password&quot; varchar DEFAULT &#39;&#39; NOT NULL, &quot;reset_password_token&quot; varchar, &quot;reset_password_sent_at&quot; datetime, &quot;remember_created_at&quot; datetime, &quot;sign_in_count&quot; integer DEFAULT 0 NOT NULL, &quot;current_sign_in_at&quot; datetime, &quot;last_sign_in_at&quot; datetime, &quot;current_sign_in_ip&quot; varchar, &quot;last_sign_in_ip&quot; varchar, &quot;created_at&quot; datetime NOT NULL, &quot;updated_at&quot; datetime NOT NULL)[0m
+[1m[35m (0.0ms)[0m  [1m[34mselect sqlite_version(*)[0m
+[1m[35m (0.0ms)[0m  [1m[35mCREATE UNIQUE INDEX &quot;index_users_on_email&quot; ON &quot;users&quot; (&quot;email&quot;)[0m
+[1m[35m (15.6ms)[0m  [1m[34m            SELECT sql
+          FROM sqlite_master
+          WHERE name=&#39;index_users_on_email&#39; AND type=&#39;index&#39;
+          UNION ALL
+          SELECT sql
+          FROM sqlite_temp_master
+          WHERE name=&#39;index_users_on_email&#39; AND type=&#39;index&#39;</pre>
+
+<p>[0m</p>
+
+<pre>[1m[35m (0.0ms)[0m  [1m[35mCREATE UNIQUE INDEX &quot;index_users_on_reset_password_token&quot; ON &quot;users&quot; (&quot;reset_password_token&quot;)[0m
+[1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO &quot;schema_migrations&quot; (&quot;version&quot;) VALUES (?)[0m  [[&quot;version&quot;, &quot;20180427003442&quot;]]
+[1m[35m (64.4ms)[0m  [1m[36mcommit transaction[0m</pre>
+
+<p>Migrating to <a
+href="../AddPhoneNumberToUsers.html">AddPhoneNumberToUsers</a>
+(20180427005033)</p>
+
+<pre>[1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+[1m[35m (15.6ms)[0m  [1m[35mALTER TABLE &quot;users&quot; ADD &quot;phone_number&quot; varchar[0m
+[1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO &quot;schema_migrations&quot; (&quot;version&quot;) VALUES (?)[0m  [[&quot;version&quot;, &quot;20180427005033&quot;]]
+[1m[35m (62.4ms)[0m  [1m[36mcommit transaction[0m</pre>
+
+<p>Migrating to <a
+href="../AddAuthenticationTokenToUsers.html">AddAuthenticationTokenToUsers</a>
+(20180510001231)</p>
+
+<pre>[1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+[1m[35m (0.0ms)[0m  [1m[35mALTER TABLE &quot;users&quot; ADD &quot;authentication_token&quot; varchar(30)[0m
+[1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+          FROM sqlite_master
+          WHERE name=&#39;index_users_on_reset_password_token&#39; AND type=&#39;index&#39;
+          UNION ALL
+          SELECT sql
+          FROM sqlite_temp_master
+          WHERE name=&#39;index_users_on_reset_password_token&#39; AND type=&#39;index&#39;</pre>
+
+<p>[0m</p>
+
+<pre>[1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+          FROM sqlite_master
+          WHERE name=&#39;index_users_on_email&#39; AND type=&#39;index&#39;
+          UNION ALL
+          SELECT sql
+          FROM sqlite_temp_master
+          WHERE name=&#39;index_users_on_email&#39; AND type=&#39;index&#39;</pre>
+
+<p>[0m</p>
+
+<pre>[1m[35m (0.0ms)[0m  [1m[35mCREATE UNIQUE INDEX &quot;index_users_on_authentication_token&quot; ON &quot;users&quot; (&quot;authentication_token&quot;)[0m
+[1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO &quot;schema_migrations&quot; (&quot;version&quot;) VALUES (?)[0m  [[&quot;version&quot;, &quot;20180510001231&quot;]]
+[1m[35m (46.8ms)[0m  [1m[36mcommit transaction[0m</pre>
+
+<p>Migrating to <a href="../CreateContacts.html">CreateContacts</a>
+(20180510003017)</p>
+
+<pre>[1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+[1m[35m (15.6ms)[0m  [1m[35mCREATE TABLE &quot;contacts&quot; (&quot;id&quot; INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, &quot;name&quot; varchar, &quot;email&quot; varchar, &quot;phone&quot; varchar, &quot;description&quot; text, &quot;user_id&quot; integer, &quot;created_at&quot; datetime NOT NULL, &quot;updated_at&quot; datetime NOT NULL)[0m
+[1m[35m (0.0ms)[0m  [1m[35mCREATE  INDEX &quot;index_contacts_on_user_id&quot; ON &quot;contacts&quot; (&quot;user_id&quot;)[0m
+[1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO &quot;schema_migrations&quot; (&quot;version&quot;) VALUES (?)[0m  [[&quot;version&quot;, &quot;20180510003017&quot;]]
+[1m[35m (31.2ms)[0m  [1m[36mcommit transaction[0m
+[1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  &quot;ar_internal_metadata&quot;.* FROM &quot;ar_internal_metadata&quot; WHERE &quot;ar_internal_metadata&quot;.&quot;key&quot; = ? LIMIT ?[0m  [[&quot;key&quot;, &quot;environment&quot;], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+[1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO &quot;ar_internal_metadata&quot; (&quot;key&quot;, &quot;value&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES (?, ?, ?, ?)[0m  [[&quot;key&quot;, &quot;environment&quot;], [&quot;value&quot;, &quot;development&quot;], [&quot;created_at&quot;, &quot;2018-06-06 22:43:01.915010&quot;], [&quot;updated_at&quot;, &quot;2018-06-06 22:43:01.915010&quot;]]
+[1m[35m (47.8ms)[0m  [1m[36mcommit transaction[0m
+[1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;[0m
+[1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+          FROM sqlite_master
+          WHERE name=&#39;index_contacts_on_user_id&#39; AND type=&#39;index&#39;
+          UNION ALL
+          SELECT sql
+          FROM sqlite_temp_master
+          WHERE name=&#39;index_contacts_on_user_id&#39; AND type=&#39;index&#39;</pre>
+
+<p>[0m</p>
+
+<pre>[1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+          FROM sqlite_master
+          WHERE name=&#39;index_users_on_authentication_token&#39; AND type=&#39;index&#39;
+          UNION ALL
+          SELECT sql
+          FROM sqlite_temp_master
+          WHERE name=&#39;index_users_on_authentication_token&#39; AND type=&#39;index&#39;</pre>
+
+<p>[0m</p>
+
+<pre>[1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+          FROM sqlite_master
+          WHERE name=&#39;index_users_on_reset_password_token&#39; AND type=&#39;index&#39;
+          UNION ALL
+          SELECT sql
+          FROM sqlite_temp_master
+          WHERE name=&#39;index_users_on_reset_password_token&#39; AND type=&#39;index&#39;</pre>
+
+<p>[0m</p>
+
+<pre>[1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+          FROM sqlite_master
+          WHERE name=&#39;index_users_on_email&#39; AND type=&#39;index&#39;
+          UNION ALL
+          SELECT sql
+          FROM sqlite_temp_master
+          WHERE name=&#39;index_users_on_email&#39; AND type=&#39;index&#39;</pre>
+
+<p>[0m Started GET “/” for 127.0.0.1 at 2018-06-06 19:43:25 -0300</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;[0m</pre>
+
+<p>Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML Completed 401 Unauthorized in 50ms (ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2018-06-06 19:43:33 -0300
+Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (2.0ms)
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (191.0ms)
+Rendered layouts/_header.html.erb (1.0ms)</pre>
+
+<p>Completed 200 OK in 4920ms (Views: 4877.9ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2018-06-06 19:48:02 -0300
+Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (1.0ms)
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (31.0ms)</pre>
+
+<p>Completed 500 Internal Server Error in 336ms (ActiveRecord: 1.0ms)</p>
+
+<p>ActionView::Template::Error (Missing partial layouts/_header with {:<a
+href=":en">locale=></a>, :<a href=":html">formats=></a>, :variants=&gt;[],
+:handlers=&gt;[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}.
+Searched in:</p>
+
+<pre>* &quot;C:/Users/Senai/dev/game/base_project/app/views&quot;
+* &quot;C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views&quot;
+* &quot;C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/twitter-bootstrap-rails-4.0.0/app/views&quot;</pre>
+
+<p>):</p>
+
+<pre> 9:   &lt;/head&gt;
+10: 
+11:   &lt;body&gt;
+12:         &lt;%= render &quot;layouts/header&quot; %&gt;
+13:     &lt;div class=&quot;container&quot;&gt;
+14:     &lt;%= yield %&gt;
+15:     &lt;/div&gt;</pre>
+
+<p>app/views/layouts/application.html.erb:12:in
+`_app_views_layouts_application_html_erb__323062395_51699624&#39;</p>
+
+<pre>Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (618.0ms)</pre>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2018-06-06 19:50:36 -0300
+Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (1.0ms)
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (29.0ms)</pre>
+
+<p>Completed 500 Internal Server Error in 322ms (ActiveRecord: 0.0ms)</p>
+
+<p>ActionView::Template::Error (Missing partial layouts/_header with {:<a
+href=":en">locale=></a>, :<a href=":html">formats=></a>, :variants=&gt;[],
+:handlers=&gt;[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}.
+Searched in:</p>
+
+<pre>* &quot;C:/Users/Senai/dev/game/base_project/app/views&quot;
+* &quot;C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views&quot;
+* &quot;C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/twitter-bootstrap-rails-4.0.0/app/views&quot;</pre>
+
+<p>):</p>
+
+<pre> 9:   &lt;/head&gt;
+10: 
+11:  &lt;!--&lt;body&gt;
+12:         &lt;%= render &quot;layouts/header&quot; %&gt;
+13:     &lt;div class=&quot;container&quot;&gt;
+14:     &lt;%= yield %&gt;
+15:     &lt;/div&gt;</pre>
+
+<p>app/views/layouts/application.html.erb:12:in
+`_app_views_layouts_application_html_erb__323062395_89329248&#39;</p>
+
+<pre>Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (618.0ms)</pre>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2018-06-06 19:51:27 -0300
+Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (1.0ms)
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (29.0ms)</pre>
+
+<p>Completed 200 OK in 270ms (Views: 269.1ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2018-06-06 19:56:17 -0300
+Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (2.0ms)
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (29.0ms)
+Rendered layouts/_header.html.erb (1.0ms)</pre>
+
+<p>Completed 200 OK in 292ms (Views: 278.8ms | ActiveRecord: 1.0ms)</p>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2018-06-06 19:58:34 -0300
+Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (1.0ms)
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (28.0ms)
+Rendered layouts/_header.html.erb (1.0ms)</pre>
+
+<p>Completed 200 OK in 288ms (Views: 286.1ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/users/sign_up” for 127.0.0.1 at 2018-06-06 20:12:45 -0300
+Processing by Devise::RegistrationsController#new as HTML</p>
+
+<pre>Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/registrations/new.html.erb within layouts/application
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (1.0ms)
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/registrations/new.html.erb within layouts/application (30.0ms)
+Rendered layouts/_header.html.erb (1.0ms)</pre>
+
+<p>Completed 200 OK in 401ms (Views: 390.6ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2018-06-06 20:12:51 -0300
+Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (0.0ms)
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (31.2ms)
+Rendered layouts/_header.html.erb (0.0ms)</pre>
+
+<p>Completed 200 OK in 347ms (Views: 353.8ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/users/sign_up” for 127.0.0.1 at 2018-06-06 20:12:53 -0300
+Processing by Devise::RegistrationsController#new as HTML</p>
+
+<pre>Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/registrations/new.html.erb within layouts/application
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (0.0ms)
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/registrations/new.html.erb within layouts/application (32.2ms)
+Rendered layouts/_header.html.erb (0.0ms)</pre>
+
+<p>Completed 200 OK in 416ms (Views: 421.8ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/users/sign_up” for 127.0.0.1 at 2018-06-06 20:21:33 -0300</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;[0m</pre>
+
+<p>Processing by Devise::RegistrationsController#new as HTML</p>
+
+<pre>Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/registrations/new.html.erb within layouts/application
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (1.0ms)
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/registrations/new.html.erb within layouts/application (158.0ms)
+Rendered layouts/_header.html.erb (1.0ms)</pre>
+
+<p>Completed 200 OK in 808ms (Views: 777.3ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2018-06-06 20:21:48 -0300
+Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (2.0ms)
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (33.0ms)
+Rendered layouts/_header.html.erb (1.0ms)</pre>
+
+<p>Completed 200 OK in 398ms (Views: 388.6ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/users/sign_up” for 127.0.0.1 at 2018-06-06 20:21:51 -0300
+Processing by Devise::RegistrationsController#new as HTML</p>
+
+<pre>Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/registrations/new.html.erb within layouts/application
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (1.0ms)
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/registrations/new.html.erb within layouts/application (28.0ms)
+Rendered layouts/_header.html.erb (0.0ms)</pre>
+
+<p>Completed 200 OK in 353ms (Views: 359.0ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2018-06-06 20:21:51 -0300
+Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (1.0ms)
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (28.0ms)
+Rendered layouts/_header.html.erb (0.0ms)</pre>
+
+<p>Completed 200 OK in 350ms (Views: 361.7ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2018-06-06 20:21:52 -0300
+Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (1.0ms)
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (29.0ms)
+Rendered layouts/_header.html.erb (1.0ms)</pre>
+
+<p>Completed 200 OK in 367ms (Views: 351.5ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2018-06-06 20:25:04 -0300
+Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendering devise/sessions/new.html.erb within layouts/application
+Rendered devise/shared/_links.html.erb (2.0ms)
+Rendered devise/sessions/new.html.erb within layouts/application (841.0ms)
+Rendered layouts/_header.html.erb (1.0ms)</pre>
+
+<p>Completed 200 OK in 1147ms (Views: 1146.0ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/users/sign_up” for 127.0.0.1 at 2018-06-06 20:25:32 -0300
+Processing by Devise::RegistrationsController#new as HTML</p>
+
+<pre>Rendering devise/registrations/new.html.erb within layouts/application
+Rendered devise/shared/_links.html.erb (1.0ms)
+Rendered devise/registrations/new.html.erb within layouts/application (32.0ms)
+Rendered layouts/_header.html.erb (1.0ms)</pre>
+
+<p>Completed 200 OK in 369ms (Views: 368.5ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2018-06-06 20:26:32 -0300
+Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendering devise/sessions/new.html.erb within layouts/application
+Rendered devise/shared/_links.html.erb (1.0ms)
+Rendered devise/sessions/new.html.erb within layouts/application (21.0ms)
+Rendered layouts/_header.html.erb (1.0ms)</pre>
+
+<p>Completed 200 OK in 363ms (Views: 361.0ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2018-06-06 20:27:44 -0300
+Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendering devise/sessions/new.html.erb within layouts/application
+Rendered devise/shared/_links.html.erb (1.0ms)
+Rendered devise/sessions/new.html.erb within layouts/application (21.0ms)</pre>
+
+<p>Completed 200 OK in 325ms (Views: 323.4ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2018-06-06 20:27:54 -0300
+Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendering devise/sessions/new.html.erb within layouts/application
+Rendered devise/shared/_links.html.erb (1.0ms)
+Rendered devise/sessions/new.html.erb within layouts/application (20.0ms)
+Rendered layouts/_header.html.erb (2.0ms)</pre>
+
+<p>Completed 200 OK in 357ms (Views: 355.4ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2018-06-06 20:28:56 -0300
+Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendering devise/sessions/new.html.erb within layouts/application
+Rendered devise/shared/_links.html.erb (1.0ms)
+Rendered devise/sessions/new.html.erb within layouts/application (20.0ms)</pre>
+
+<p>Completed 200 OK in 334ms (Views: 333.6ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2018-06-06 20:46:43 -0300</p>
+
+<p>SyntaxError (C:/Users/Senai/dev/game/base_project/config/routes.rb:10:
+syntax error, unexpected keyword_end, expecting end-of-input</p>
+
+<pre>end
+   ^):</pre>
+
+<p>config/routes.rb:10: syntax error, unexpected keyword_end, expecting
+end-of-input</p>
+
+<pre>Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.0ms)
+Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (862.1ms)</pre>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2018-06-06 20:47:02 -0300</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/users/sign_in”):</p>
+
+<p>actionpack (5.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:53:in
+`call&#39; web-console (3.5.1) lib/web_console/middleware.rb:135:in
+`call_app&#39; web-console (3.5.1) lib/web_console/middleware.rb:28:in
+`block in call&#39; web-console (3.5.1) lib/web_console/middleware.rb:18:in
+`catch&#39; web-console (3.5.1) lib/web_console/middleware.rb:18:in
+`call&#39; actionpack (5.0.7)
+lib/action_dispatch/middleware/show_exceptions.rb:31:in `call&#39; railties
+(5.0.7) lib/rails/rack/logger.rb:36:in `call_app&#39; railties (5.0.7)
+lib/rails/rack/logger.rb:24:in `block in call&#39; activesupport (5.0.7)
+lib/active_support/tagged_logging.rb:69:in `block in tagged&#39;
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:26:in
+`tagged&#39; activesupport (5.0.7)
+lib/active_support/tagged_logging.rb:69:in `tagged&#39; railties (5.0.7)
+lib/rails/rack/logger.rb:24:in `call&#39; sprockets-rails (3.2.1)
+lib/sprockets/rails/quiet_assets.rb:13:in `call&#39; actionpack (5.0.7)
+lib/action_dispatch/middleware/request_id.rb:24:in `call&#39; rack (2.0.4)
+lib/rack/method_override.rb:22:in `call&#39; rack (2.0.4)
+lib/rack/runtime.rb:22:in `call&#39; activesupport (5.0.7)
+lib/active_support/cache/strategy/local_cache_middleware.rb:28:in
+`call&#39; actionpack (5.0.7)
+lib/action_dispatch/middleware/executor.rb:12:in `call&#39; actionpack
+(5.0.7) lib/action_dispatch/middleware/static.rb:136:in `call&#39; rack
+(2.0.4) lib/rack/sendfile.rb:111:in `call&#39; rack-cors (1.0.2)
+lib/rack/cors.rb:97:in `call&#39; railties (5.0.7)
+lib/rails/engine.rb:522:in `call&#39; puma (3.11.3)
+lib/puma/configuration.rb:225:in `call&#39; puma (3.11.3)
+lib/puma/server.rb:624:in `handle_request&#39; puma (3.11.3)
+lib/puma/server.rb:438:in `process_client&#39; puma (3.11.3)
+lib/puma/server.rb:302:in `block in run&#39; puma (3.11.3)
+lib/puma/thread_pool.rb:120:in `call&#39; puma (3.11.3)
+lib/puma/thread_pool.rb:120:in `block in spawn_thread&#39;</p>
+
+<pre>Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+Rendered collection of C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [1 times] (2.0ms)
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (28.0ms)
+Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1065.1ms)</pre>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:05:26 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 215ms (Views: 204.5ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:09:01 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 657ms (Views: 638.5ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:10:46 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 364ms (Views: 352.9ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:12:39 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 386ms (Views: 374.6ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:13:29 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (1.0ms)</pre>
+
+<p>Completed 200 OK in 360ms (Views: 349.6ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:16:11 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 403ms (Views: 392.1ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:16:22 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 382ms (Views: 371.0ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:16:44 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (1.0ms)</pre>
+
+<p>Completed 200 OK in 375ms (Views: 356.5ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:18:46 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 379ms (Views: 367.8ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:21:41 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 261ms (Views: 195.3ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:24:39 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 304ms (Views: 287.2ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:25:57 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (1.0ms)</pre>
+
+<p>Completed 200 OK in 201ms (Views: 190.0ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:26:24 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (1.0ms)</pre>
+
+<p>Completed 200 OK in 201ms (Views: 189.1ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:29:21 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (1.0ms)</pre>
+
+<p>Completed 200 OK in 237ms (Views: 189.0ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:30:59 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 199ms (Views: 187.9ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:38:04 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (1.0ms)</pre>
+
+<p>Completed 200 OK in 279ms (Views: 260.6ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:39:26 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 500 Internal Server Error in 141ms (ActiveRecord: 0.0ms)</p>
+
+<p>ActionView::Template::Error (Invalid CSS after “&lt;/head&gt;”: expected
+“{”, was “”):</p>
+
+<pre> 4:     &lt;title&gt;SlideQuest Online&lt;/title&gt;
+ 5:     &lt;%= csrf_meta_tags %&gt;
+ 6: 
+ 7:     &lt;%= stylesheet_link_tag    &#39;application&#39;, media: &#39;all&#39;, &#39;data-turbolinks-track&#39;: &#39;reload&#39; %&gt;
+ 8:     &lt;%= javascript_include_tag &#39;application&#39;, &#39;data-turbolinks-track&#39;: &#39;reload&#39; %&gt;
+ 9:   &lt;/head&gt;
+10:</pre>
+
+<p><a
+href="../app/assets/stylesheets/home_scss.html">app/assets/stylesheets/home.scss</a>:31
+app/views/layouts/application.html.erb:7:in
+`_app_views_layouts_application_html_erb___583860893_77718768&#39;</p>
+
+<pre>Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.0ms)
+Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (720.0ms)</pre>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:39:54 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 377ms (Views: 365.8ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:40:35 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 315ms (Views: 296.9ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:40:59 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 375ms (Views: 364.3ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:42:35 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 384ms (Views: 367.2ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:43:10 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (2.0ms)</pre>
+
+<p>Completed 200 OK in 412ms (Views: 400.5ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:44:29 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 401ms (Views: 390.7ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:45:42 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (1.0ms)</pre>
+
+<p>Completed 200 OK in 373ms (Views: 354.4ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:48:45 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 394ms (Views: 378.9ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:49:17 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (1.0ms)</pre>
+
+<p>Completed 200 OK in 272ms (Views: 257.2ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:49:25 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (1.0ms)</pre>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:49:25 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML Completed 200 OK in 352ms (Views: 340.8ms | ActiveRecord: 0.0ms)</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 277ms (Views: 263.1ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:49:26 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 198ms (Views: 187.8ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:50:17 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 197ms (Views: 186.8ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:50:21 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (1.0ms)</pre>
+
+<p>Completed 200 OK in 284ms (Views: 232.0ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:50:22 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (1.0ms)</pre>
+
+<p>Completed 200 OK in 289ms (Views: 277.4ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:51:49 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (1.0ms)</pre>
+
+<p>Completed 200 OK in 201ms (Views: 190.1ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:52:09 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 359ms (Views: 348.8ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:52:40 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 394ms (Views: 377.3ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 21:59:14 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 427ms (Views: 412.7ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-06 22:00:01 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 378ms (Views: 367.1ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-07 20:54:26 -0300</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;[0m</pre>
+
+<p>Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (23.0ms)</pre>
+
+<p>Completed 200 OK in 2255ms (Views: 2217.8ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-07 21:02:15 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 321ms (Views: 309.4ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-07 21:03:25 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (1.0ms)</pre>
+
+<p>Completed 200 OK in 312ms (Views: 297.3ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-07 21:03:45 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 665ms (Views: 649.2ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-07 21:04:12 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 315ms (Views: 303.6ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-07 21:04:23 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 326ms (Views: 315.1ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-07 21:04:33 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 310ms (Views: 296.8ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-07 21:05:51 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 221ms (Views: 210.6ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-07 21:09:17 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (1.0ms)</pre>
+
+<p>Completed 200 OK in 226ms (Views: 214.7ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-07 21:10:18 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (1.0ms)</pre>
+
+<p>Completed 200 OK in 259ms (Views: 247.8ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-07 21:13:23 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 396ms (Views: 385.4ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-07 21:16:18 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 500 Internal Server Error in 168ms (ActiveRecord: 0.0ms)</p>
+
+<p>ActionView::Template::Error (Invalid CSS after “… {width:150px;}”: expected
+selector or at-rule, was “/*button {”):</p>
+
+<pre> 4:     &lt;title&gt;SlideQuest Online&lt;/title&gt;
+ 5:     &lt;%= csrf_meta_tags %&gt;
+ 6: 
+ 7:     &lt;%= stylesheet_link_tag    &#39;application&#39;, media: &#39;all&#39;, &#39;data-turbolinks-track&#39;: &#39;reload&#39; %&gt;
+ 8:     &lt;%= javascript_include_tag &#39;application&#39;, &#39;data-turbolinks-track&#39;: &#39;reload&#39; %&gt;
+ 9:   &lt;/head&gt;
+10:</pre>
+
+<p><a
+href="../app/assets/stylesheets/home_scss.html">app/assets/stylesheets/home.scss</a>:10
+app/views/layouts/application.html.erb:7:in
+`_app_views_layouts_application_html_erb__283375711_82400484&#39;</p>
+
+<pre>Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.0ms)
+Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.0ms)
+Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (964.1ms)</pre>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-07 21:17:20 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (1.0ms)</pre>
+
+<p>Completed 200 OK in 402ms (Views: 391.3ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-07 21:19:46 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (1.0ms)</pre>
+
+<p>Completed 200 OK in 390ms (Views: 378.5ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-07 21:20:41 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 377ms (Views: 365.9ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-07 21:21:03 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 415ms (Views: 403.2ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-07 21:21:15 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (1.0ms)</pre>
+
+<p>Completed 200 OK in 417ms (Views: 406.7ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-07 21:44:26 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (1.0ms)</pre>
+
+<p>Completed 200 OK in 389ms (Views: 377.7ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-06-07 21:46:59 -0300 Processing by <a
+href="../PagesController.html#method-i-home">PagesController#home</a> as
+HTML</p>
+
+<pre>Rendering pages/home.html.erb within layouts/application
+Rendered pages/home.html.erb within layouts/application (0.0ms)</pre>
+
+<p>Completed 200 OK in 262ms (Views: 212.9ms | ActiveRecord: 0.0ms)</p>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+
